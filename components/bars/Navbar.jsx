@@ -3,13 +3,15 @@ import Link from "next/link"
 import { useState } from "react"
 import { FiMenu } from "react-icons/fi";
 import { RiMenu3Fill } from "react-icons/ri";
+import { FaShoppingCart } from "react-icons/fa";
+
 
 const Navbar = () => {
 
     const [isActive, setisActive] = useState(false)
 
     return (
-        <main className="flex justify-between p-2 gap-x-4 select-none bg-neutral-900">
+        <main className="flex justify-between p-4 gap-x-4 select-none bg-neutral-900">
             <section className="flex gap-x-2">
                 <img src="/assets/logo.svg" alt="" />
                 <label className="max-sm:hidden" htmlFor="img">PixelShopping</label>
@@ -23,7 +25,7 @@ const Navbar = () => {
                         <Link href={'/'} >Share</Link>
                     </div>
                     <div className="">
-                        <div className={`max-sm:flex hidden px-6 ${isActive && 'bg-neutral-800 rounded'}`} onClick={() => setisActive(!isActive)}>
+                        <div className={`max-sm:flex hidden px-2 ${isActive && 'bg-neutral-800 rounded'}`} onClick={() => setisActive(!isActive)}>
                             {isActive ? (
                                 <RiMenu3Fill size={25} className="text-neutral-400 hover:text-neutral-200" />
                             ) : (
@@ -45,9 +47,9 @@ const Navbar = () => {
 
                     </div>
                 </div>
-                <div>
-                    <div>CARD</div>
-                </div>
+                <Link href={'/'} className="px-4">
+                    <FaShoppingCart size={25} className="text-white" />
+                </Link>
             </section>
         </main>
     )

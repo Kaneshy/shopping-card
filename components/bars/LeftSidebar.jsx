@@ -24,8 +24,8 @@ const LeftSidebar = () => {
               <Image
                 src={link.imgURL}
                 alt={link.label}
-                width={24}
-                height={24}
+                width={20}
+                height={20}
               />
 
               <p className={`text-light-1 max-lg:hidden px-4 `}>{link.label}</p>
@@ -46,8 +46,8 @@ const LeftSidebar = () => {
               <Image
                 src={link.imgURL}
                 alt={link.label}
-                width={34}
-                height={34}
+                width={30}
+                height={24}
               />
 
               <p className={`text-light-1 max-lg:hidden px-4 `}>{link.label}</p>  

@@ -43,12 +43,23 @@ function Bottombar() {
                 })}
 
 
-                <div className="relative">
-                    <div className={`max-sm:flex hidden px-6 ${isActive && 'bg-neutral-900 rounded'}`} onClick={() => setisActive(!isActive)}>
+                <div className="relative px-4 ">
+                    <div className={`max-lg:flex bottombar_link hidden  ${isActive && 'bg-neutral-900 rounded'}`} onClick={() => setisActive(!isActive)}>
                         {isActive ? (
-                            <RiMenu3Fill size={25} className="text-neutral-400 hover:text-neutral-200" />
+                            <>
+                                <RiMenu3Fill size={25} className="text-neutral-400 hover:text-neutral-200" />
+                                <p className='text-subtle-medium text-light-1 max-sm:hidden'>
+                                    Settings
+                                </p>
+                            </>
+
                         ) : (
-                            <FiMenu size={25} className="text-neutral-400 hover:text-neutral-200" />
+                            <>
+                                <FiMenu size={25} className="text-neutral-400 hover:text-neutral-200" />
+                                <p className='text-subtle-medium text-light-1 max-sm:hidden'>
+                                    Settings
+                                </p>
+                            </>
                         )}
                     </div>
                     {isActive && (
