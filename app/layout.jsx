@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/bars/Navbar'
 import LeftSidebar from '@/components/bars/LeftSidebar'
+import Bottombar from '@/components/bars/Bottonbar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
               </div>
             </section>
           </main>
+          <Bottombar />
       </body>
     </html>
   )
