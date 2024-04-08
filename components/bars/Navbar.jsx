@@ -33,7 +33,7 @@ const Navbar = () => {
                             )}
                         </div>
                         {isActive && (
-                            <div className=" fixed top-10 left-0 right-0 bg-neutral-900 p-4 rounded flex-col gap-y-2 max-sm:flex hidden">
+                            <div className=" fixed top-14 left-0 right-0 bg-neutral-900 p-4 rounded flex-col gap-y-2 max-sm:flex hidden">
                                 <section className="flex gap-x-2 hover:bg-neutral-600 p-2 rounded">
                                     <img src="/assets/logo.svg" alt="" />
                                     <p  >more</p>
